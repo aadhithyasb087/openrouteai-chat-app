@@ -1,0 +1,122 @@
+p,
+h5 {
+  margin: 0px;
+}
+.character-info {
+  background-color: #cf275a;
+  /* background-image: linear-gradient(120deg, #890468, #9c264a); */
+  width: 27%;
+  height: 600px;
+}
+.character-info-header > p {
+  margin-top: 0px;
+}
+.character-info-msg {
+  margin-right: 50px;
+}
+.character-info-header {
+  display: flex;
+  color: white;
+  background-color: #252525;
+  /* width: 100%; */
+  height: 45px;
+  align-items: start;
+  gap: 10px;
+  mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgba(0, 0, 0, 1)),
+    color-stop(0.65, rgba(0, 0, 0, 1)),
+    color-stop(1, rgba(0, 0, 0, 0))
+  );
+  padding: 0px 10px;
+  z-index: 1;
+  position: relative;
+}
+.character-info-edit {
+  padding-top: 5px;
+}
+.character-img-cont {
+  position: relative;
+  top: -15px;
+  z-index: 0;
+  width: 100%;
+  height: 320px;
+}
+.character-img-cont > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.character-info-details {
+  padding: 5px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: -75px;
+  box-shadow: -20px 0px 100px black;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0, 0.3),
+    rgba(255, 106, 151, 1)
+  );
+}
+.character-info-details-top > p {
+  margin-top: 2px;
+}
+
+.character-info-details-cont {
+  margin-top: 25px;
+}
+.character-info-details-cont-one {
+  padding: 5px 25px;
+  background-color: #252525;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.character-info-details-cont-one > div {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  gap: 5px;
+  font-size: 13px;
+}
+.character-info-details-cont-one > div > p {
+  margin: 0px;
+}
+.character-info-details-cont-one-right {
+  flex: 1;
+}
+
+.character-info-details-cont-two {
+  background-color: #252525;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 15px;
+  gap: 20px;
+}
+.character-info-details-cont-two-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.character-info-details-cont-two-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.character-info-details-cont-two-right > div {
+  display: flex;
+}
+.character-info-details-cont-two-right > div > b {
+  flex: 1;
+}
+.character-info-details-cont-two-right > p {
+  font-size: 15px;
+}

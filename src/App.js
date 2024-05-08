@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import  { useEffect} from "react";
+import Header from "./components/header/Header";
+import CharacterInfo from "./components/characterInfo/CharacterInfo";
+import ChatContainer from "./components/chat/ChatContainer";
+function App()
+{
+  var random = 0;
+  useEffect(() =>
+  {
+  random = Math.random().toFixed(2);
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header  />
+      <div className="middle-cont">
+        <CharacterInfo />
+        <ChatContainer randomNum={random}  />
+      </div>
     </div>
   );
 }
