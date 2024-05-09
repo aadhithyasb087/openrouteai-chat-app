@@ -1,21 +1,28 @@
 import "./App.css";
-import  { useEffect} from "react";
+import { useEffect } from "react";
 import Header from "./components/header/Header";
 import CharacterInfo from "./components/characterInfo/CharacterInfo";
 import ChatContainer from "./components/chat/ChatContainer";
-function App()
-{
-  var random = 0;
+import React, { useState } from "react";
+
+function App() {
+  const [random,setRandom]=useState(0)
   useEffect(() =>
   {
-  random = Math.random().toFixed(2);
-  },[])
+    if (!sessionStorage.getItem("randomNum"))
+    {
+    setRandom(Math.random().toFixed(2));
+    sessionStorage.setItem("randomNum", random);
+    }
+    
+  }, []);
   return (
     <div className="App">
-      <Header  />
+      <Header />
       <div className="middle-cont">
         <CharacterInfo />
-        <ChatContainer randomNum={random}  />
+
+        <ChatContainer randomNum={random} />
       </div>
     </div>
   );

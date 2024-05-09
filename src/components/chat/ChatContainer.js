@@ -12,12 +12,11 @@ import firebase from "firebase/compat/app";
 import { RotatingLines } from "react-loader-spinner";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/firebaseConfig";
-function ChatContainer({randomNum}) {
+function ChatContainer({ randomNum }) {
   const [content, setContent] = useState("");
   const [userContent, setUserContent] = useState("");
   const [aiContent, setAiContent] = useState("");
   const [user] = useAuthState(auth);
-
 
   var messagesRef = "";
   if (user) {
