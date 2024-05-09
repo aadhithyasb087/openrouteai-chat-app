@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/openrouteai-cart-app/static/css/main.180efd66.css",
+    "main.js": "/openrouteai-cart-app/static/js/main.15f93745.js",
+    "static/js/453.1f4fc30a.chunk.js": "/openrouteai-cart-app/static/js/453.1f4fc30a.chunk.js",
+    "index.html": "/openrouteai-cart-app/index.html",
+    "main.180efd66.css.map": "/openrouteai-cart-app/static/css/main.180efd66.css.map",
+    "main.15f93745.js.map": "/openrouteai-cart-app/static/js/main.15f93745.js.map",
+    "453.1f4fc30a.chunk.js.map": "/openrouteai-cart-app/static/js/453.1f4fc30a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.180efd66.css",
+    "static/js/main.15f93745.js"
+  ]
+}
