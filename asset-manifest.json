@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/openrouteai-chat-app/static/css/main.180efd66.css",
-    "main.js": "/openrouteai-chat-app/static/js/main.c21c88dc.js",
-    "static/js/453.1f4fc30a.chunk.js": "/openrouteai-chat-app/static/js/453.1f4fc30a.chunk.js",
+    "main.js": "/openrouteai-chat-app/static/js/main.75a74a25.js",
+    "static/js/453.c40bc53d.chunk.js": "/openrouteai-chat-app/static/js/453.c40bc53d.chunk.js",
     "index.html": "/openrouteai-chat-app/index.html",
     "main.180efd66.css.map": "/openrouteai-chat-app/static/css/main.180efd66.css.map",
-    "main.c21c88dc.js.map": "/openrouteai-chat-app/static/js/main.c21c88dc.js.map",
-    "453.1f4fc30a.chunk.js.map": "/openrouteai-chat-app/static/js/453.1f4fc30a.chunk.js.map"
+    "main.75a74a25.js.map": "/openrouteai-chat-app/static/js/main.75a74a25.js.map",
+    "453.c40bc53d.chunk.js.map": "/openrouteai-chat-app/static/js/453.c40bc53d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.180efd66.css",
-    "static/js/main.c21c88dc.js"
+    "static/js/main.75a74a25.js"
   ]
 }
