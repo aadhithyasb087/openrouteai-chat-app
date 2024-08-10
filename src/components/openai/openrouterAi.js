@@ -13,7 +13,7 @@ const openai = new OpenAI({
 });
 export default async function main(userContent) {
   const completion = await openai.chat.completions.create({
-    model: "gryphe/mythomist-7b:free",
+    model: "mistralai/mistral-7b-instruct:free",
     messages: [{ role: "user", content: `${userContent}` }],
     max_tokens: 180,
   });
