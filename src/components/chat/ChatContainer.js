@@ -56,7 +56,7 @@ function ChatContainer({ randomNum }) {
   }, [aiContent]);
 
   async function fetchAiData() {
-    const tempData = await main(userContent);
+    const tempData = await main(content);
     return tempData.content;
   }
   const submitHandler = async (e) => {
