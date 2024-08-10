@@ -14,7 +14,6 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/firebaseConfig";
 function ChatContainer({ randomNum }) {
   const [content, setContent] = useState("");
-  const [userContent, setUserContent] = useState("");
   const [aiContent, setAiContent] = useState("");
   const [user] = useAuthState(auth);
 
@@ -38,15 +37,14 @@ function ChatContainer({ randomNum }) {
 
   useEffect(() => {
     async function tempFunction() {
-      if (userContent && aiContent) {
+      if (content && aiContent) {
         await messagesRef.add({
-          userMessage: userContent,
+          userMessage: content,
           aiMessage: aiContent,
           createdAt: firebase.firestore.FieldValue.serverTimestamp(),
           id: messages.length + 1,
         });
         setContent("");
-        setUserContent("");
         setAiContent("");
         setLoading(false);
       }
@@ -63,7 +61,6 @@ function ChatContainer({ randomNum }) {
     e.preventDefault();
     if (content) {
       setLoading(true);
-      setUserContent(content);
       setAiContent(await fetchAiData());
     } else {
       alert("Please enter valid content");
